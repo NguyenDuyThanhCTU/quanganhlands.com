@@ -9,6 +9,7 @@ module.exports = {
       },
       fontFamily: {
         LexendDeca: ["Lexend Deca", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"],
       },
 
       colors: {
@@ -21,6 +22,7 @@ module.exports = {
         blueAdmin: "#74affc",
         purpleAdmin: "#bb86fc37",
         purpleHover: "#BB86FC",
+        greenMain: "#0a5116",
       },
     },
   },

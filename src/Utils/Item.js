@@ -99,3 +99,148 @@ export const SocialMediaDashboard = [
       "https://img.nhandan.com.vn/Files/Images/2021/04/13/3A708284_F5B8_407D_ADC0_339DBEE-1618275907021.jpeg",
   },
 ];
+
+// Custom Here
+
+export const HeaderItems = [
+  // một {} tương ứng với 1 document trong collection (về cấu trúc file json)
+  {
+    name: "Trang chủ",
+    dropdown: [],
+    link: "/",
+  },
+  {
+    name: "Giới thiệu",
+    dropdown: [],
+    link: "/introduction",
+  },
+  {
+    name: "Tin tức",
+    dropdown: [],
+    link: "/news",
+  },
+  {
+    name: "Thiết kế - thi công nội thất",
+    dropdown: [
+      {
+        name: "Chung Cư",
+        link: "/",
+      },
+      {
+        name: "Biệt Thự",
+        link: "/",
+      },
+      {
+        name: "Nhà Dân",
+        link: "/",
+      },
+      {
+        name: "Shop",
+        link: "/",
+      },
+      {
+        name: "Văn Phòng",
+        link: "/",
+      },
+      {
+        name: "Khách Sạn",
+        link: "/",
+      },
+    ],
+    link: "/designs",
+  },
+  {
+    name: "Thi công xây dựng",
+    dropdown: [
+      {
+        name: "Thi công Biệt Thự",
+        link: "/",
+      },
+      {
+        name: "Thi công Khách Sạn",
+        link: "/",
+      },
+      {
+        name: "Thi công Nhà Dân",
+        link: "/",
+      },
+      {
+        name: "Thi công Trạm điện",
+        link: "/",
+      },
+    ],
+    link: "/construction",
+  },
+  {
+    name: "Liên hệ",
+    dropdown: [],
+    link: "/contact",
+  },
+];
+
+export const HomeSection4Items = [
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2019/12/quytrinh1.png",
+    outline: "https://qhomedecor.vn/wp-content/uploads/2018/10/11.png",
+  },
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2019/12/quytrinh2.png",
+    outline: "https://qhomedecor.vn/wp-content/uploads/2018/11/phac-thao.png",
+  },
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2019/12/quytrinh3.png",
+    outline: "https://qhomedecor.vn/wp-content/uploads/2018/11/sanxuat.png",
+  },
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2019/12/quytrinh4.png",
+    outline: "https://qhomedecor.vn/wp-content/uploads/2018/11/ban-giao.png",
+  },
+];
+
+export const IntroItems1 = [
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2020/10/img1.png",
+  },
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2020/10/img2.png",
+  },
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2020/10/img3.png",
+  },
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2020/10/img4.png",
+  },
+];
+
+export const IntroItems2 = [
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2020/10/img5.png",
+  },
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2020/10/img6.png",
+  },
+];
+
+export const IntroItems3 = [
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2020/10/img7.png",
+  },
+  {
+    image: "https://qhomedecor.vn/wp-content/uploads/2020/10/img8.png",
+  },
+];
+
+export const NewsSection2 = [
+  {
+    name: "Tin tức    ",
+  },
+  {
+    name: "Khuyến mại",
+  },
+  {
+    name: "Liên hệ",
+  },
+  {
+    name: "Dịch vụ",
+  },
+];

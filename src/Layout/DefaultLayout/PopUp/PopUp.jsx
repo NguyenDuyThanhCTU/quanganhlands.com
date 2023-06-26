@@ -1,25 +1,21 @@
-import { SiZalo } from "react-icons/si";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { useData } from "../../../Context/DataProviders";
-const PopUp = () => {
-  const { Phone } = useData();
-  return (
-    <div className="flex flex-col gap-2">
-      <a
-        className="w-[50px] h-[50px] bg-orange-700 flex justify-center items-center rounded-3xl call-animation"
-        href={`tel:${Phone}`}
-      >
-        <BsFillTelephoneFill className="w-[30px] h-[30px] text-white " />
-      </a>
+import React, { useEffect } from "react";
+import { BiPhoneCall } from "react-icons/bi";
 
-      <a
-        className="w-[50px] h-[50px] bg-blue-600 flex justify-center items-center rounded-3xl spin-animation "
-        href={`http://zalo.me/${Phone}`}
-      >
-        <SiZalo className="w-[30px] h-[30px] text-white" />
-      </a>
+function PopUp() {
+  return (
+    <div className="fixed bottom-7 right-10  box-border">
+      <div className="flex items-center">
+        <div className="text-black font-semibold d:flex p:hidden justify-start items-center rounded-full w-[250px]  h-[60px] bg-white shadow-2xl absolute right-5">
+          <a href="tel:0971706658">
+            <span className="ml-5">Liên hệ với chúng tôi</span>
+          </a>
+        </div>
+        <div className="h-16 w-16   call-animation">
+          <BiPhoneCall className="text-white text-[40px]" />
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 export default PopUp;

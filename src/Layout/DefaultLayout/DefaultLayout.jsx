@@ -1,26 +1,25 @@
 import React from "react";
 
 import Header from "./Header/Header";
-import Sidebar from "./Sidebar/Sidebar";
-import Ads from "./Ads/Ads";
-import PopUp from "./PopUp/PopUp";
+
 import Fetch from "./Item/Fetch";
 import Footer from "./Footer/Footer";
+import TopFooter from "./TopFooter/TopFooter";
+import PopUp from "./PopUp/PopUp";
 
 const DefaultLayout = ({ children }) => {
   return (
     <>
       <Fetch />
 
-      <div className="d:ml-[270px] p:ml-0">
+      <div>
         <Header />
-        <div className="mr-[270px]">{children}</div>
-      </div>
-      <div className="fixed bottom-10 left-10 phone:bottom-24  phone:right-4 z-50">
-        <PopUp />
-      </div>
-      <div className="z-40 absolute w-full mt-52">
+        <div className=" ">{children}</div>
+        <TopFooter />
         <Footer />
+      </div>
+      <div>
+        <PopUp />
       </div>
     </>
   );

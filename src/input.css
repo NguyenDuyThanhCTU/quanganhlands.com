@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,10 +42,11 @@
   }
 
 .truncate {
-    white-space: nowrap; /* Ngăn chữ xuống dòng */
-    text-overflow: ellipsis; /* Hiển thị dấu "..." */
-    overflow: hidden; /* Ẩn chữ dư thừa */
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
   }
+
 
   .call-animation {
     padding: 10px;
@@ -173,4 +175,10 @@
     transform: rotate(-90deg);
   }
   
-  
+  .content-style{
+    text-transform: uppercase;
+    color: #0a5116;
+    font-size: 25px;
+    font-weight: 700;
+    
+  }
