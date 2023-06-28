@@ -35,8 +35,8 @@ const Section1 = () => {
             />
           </SwiperSlide>
         </Swiper>
-        <div className="text-white bg-[rgba(0,0,0,0.7)] absolute max-w-[550px] right-36 bottom-20 z-10">
-          <p className="py-6 px-5">
+        <div className="text-white bg-[rgba(0,0,0,0.7)] absolute  d:w-[550px] p:w-[250px] p:right-0 d:right-32  z-10 d:bottom-20 p:bottom-0 d:text-[17px] p:text-[10px]">
+          <p className="d:py-6 d:px-5 p:p-2 ">
             Công ty TNHH Đầu tư xây dựng nội thất Quang Minh là Công ty chuyên
             Xây dựng - Thiết kế - Thi Công - Hoàn thiện nội ngoại thất các công
             trình dân dụng và công nghiệp có uy tín tại Hà Nội. Chúng tôi đi

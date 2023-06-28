@@ -3,11 +3,11 @@ import { HomeSection5Items } from "../../Utils/Temp";
 
 const Designs = () => {
   return (
-    <div className="mx-80">
+    <div className="d:mx-80 p:mx-0">
       <h3 className="content-style text-center py-10">
         thiết kế - Thi công nội thất
       </h3>
-      <div className="grid grid-cols-4 gap-5 ">
+      <div className="d:grid grid-cols-4 gap-5 p:flex flex-col items-center">
         {HomeSection5Items.map((items) => (
           <div className="w-[278px]">
             <div className="w-full overflow-hidden">

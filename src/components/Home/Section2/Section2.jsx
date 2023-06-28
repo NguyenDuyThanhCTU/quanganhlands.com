@@ -3,14 +3,9 @@ import React from "react";
 const Section2 = () => {
   return (
     <div className="relative  pb-9">
-      <img
-        src="https://qhomedecor.vn/wp-content/uploads/2019/12/bg-gioithieu-1.png?id=277"
-        alt="background"
-      />
-
-      <div className="flex items-start justify-center absolute top-5 w-full">
-        <div className="w-[500px]">
-          <h3 className="content-style  text-center ">Giới thiệu</h3>
+      <div className="d:flex-row p:flex-col flex items-start justify-center Home-bg top-5 w-full py-10">
+        <div className="d:w-[500px] p-2">
+          <h3 className="content-style bg-none text-center ">Giới thiệu</h3>
           <div className="flex flex-col gap-3 text-[15px]">
             <p>
               Công ty TNHH Đầu tư xây dựng nội thất Quang Minh có đội ngũ kỹ sư
@@ -42,6 +37,7 @@ const Section2 = () => {
             <span className="bg-yellow-500 p-2">Xem thêm</span>
           </div>
         </div>
+
         <div className="ml-5">
           <img
             src="https://qhomedecor.vn/wp-content/uploads/2020/10/z2106169255520_18c0632055056b386a6590962466f414.jpg"

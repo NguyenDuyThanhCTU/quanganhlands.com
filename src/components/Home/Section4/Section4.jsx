@@ -3,19 +3,12 @@ import { HomeSection4Items } from "../../../Utils/Item";
 
 const Section4 = () => {
   return (
-    <div className="relative">
-      <div>
-        <img
-          src="https://qhomedecor.vn/wp-content/uploads/2019/12/bg-quytrinh.png?id=296"
-          alt="bg"
-          className="h-[565px] object-cover w-full"
-        />
-      </div>
-      <div className="bg-[rgba(0,0,0,0.5)] absolute flex flex-col items-center text-white top-0 ">
-        <h3 className="py-7 uppercase font-bold text-[25px] ">
+    <div className="relative py-10">
+      <div className="bg-[rgba(0,0,0,0.5)] Home-bg1  flex flex-col items-center text-white top-0 p-2">
+        <h3 className="py-7 uppercase font-bold text-[25px] text-center">
           Quy trình thi công nội thất chuẩn của Quang Anh
         </h3>
-        <div className="flex gap-20 mb-5">
+        <div className="flex d:gap-20 p:gap-5 mb-5">
           {HomeSection4Items.map((items, idx) => (
             <div className="group relative">
               <div className=" scale-50 group-hover:scale-100 duration-500 ">
@@ -28,7 +21,7 @@ const Section4 = () => {
             </div>
           ))}
         </div>
-        <p className="py-14 border-t mx-96">
+        <p className="py-14 border-t d:mx-96 p:mx-0">
           Với khát khao chinh phục đỉnh cao bằng sự chuyên nghiệp, uy tín, chúng
           tôi sẽ không ngừng sáng tạo, phấn đấu, học hỏi để tự hoàn thiện với
           mục tiêu phát triển doanh nghiệp một cách bền vững. Công ty TNHH Đầu

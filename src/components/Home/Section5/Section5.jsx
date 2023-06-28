@@ -8,7 +8,7 @@ const Section5 = () => {
         <h3 className="content-style text-center py-10">
           Thiết kế - thi công nội thất
         </h3>
-        <div className="flex gap-16 justify-center">
+        <div className="flex d:gap-16 p:gap-3 justify-center items-center d:flex-row p:flex-col">
           {HomeSection5Items.slice(0, 4).map((items) => (
             <div className="w-[278px]">
               <div className="w-full overflow-hidden">
@@ -27,7 +27,7 @@ const Section5 = () => {
         <h3 className="content-style text-center py-10">
           Thiết kế - thi công nội thất
         </h3>
-        <div className="flex gap-16 justify-center">
+        <div className="flex d:gap-16 p:gap-3 justify-center items-center d:flex-row p:flex-col">
           {HomeSection5Items1.slice(0, 4).map((items) => (
             <div className="w-[278px]">
               <div className="w-full overflow-hidden">

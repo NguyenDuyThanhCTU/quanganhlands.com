@@ -2,17 +2,23 @@ import React, { useState } from "react";
 import { HeaderItems } from "../../../Utils/Item";
 import { BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import logo from "./1.png";
+import { MdOutlineFormatListBulleted } from "react-icons/md";
+import { RxCross1 } from "react-icons/rx";
+import DropDown from "./DropDown/DropDown";
+
 const Header = () => {
   const [Search, setSearch] = useState(false);
   const [isSelected, setSelected] = useState(0);
+  const [Hidden, setHidden] = useState(false);
 
   return (
     <>
       {/* <--- Desktop ---> */}
       <div className="font-Roboto  bg-white  shadow-lg">
-        <div className="p-2 flex items-end justify-center gap-56 cursor-pointer">
+        <div className="p:hidden p-2 d:flex items-end justify-center gap-56 cursor-pointer">
           <div className="">
-            <img src="./logo.png" alt="img" className="h-[100px]" />
+            <img src={logo} alt="img" className="h-[100px]" />
             <h3 className=" font-bold text-[17px]  text-green-600 uppercase">
               {" "}
               Quang Anh Lands
@@ -67,6 +73,46 @@ const Header = () => {
                 </div>
               )}
             </div>
+          </div>
+        </div>
+
+        <div className="p:block d:hidden ">
+          <div className="justify-between mx-5 flex">
+            <div className="py-2">
+              <img src={logo} alt="logo" className="w-48" />
+              <h3 className=" font-bold text-[20px]  text-green-600 uppercase">
+                {" "}
+                Quang Anh Lands
+              </h3>
+            </div>
+            <div>
+              <div className="flex items-center text-[60px]">
+                {Hidden ? (
+                  <RxCross1
+                    className=" text-black p-2 "
+                    onClick={() => setHidden(!Hidden)}
+                  />
+                ) : (
+                  <MdOutlineFormatListBulleted
+                    className=" text-black p-2 "
+                    onClick={() => setHidden(!Hidden)}
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${
+              Hidden ? "h-screen" : "h-0 "
+            } w-full duration-700 bg-[rgba(253,253,253,0.9)] overflow-hidden `}
+          >
+            {HeaderItems.map((items) => (
+              <DropDown
+                content={items.name}
+                link={items.link}
+                setHidden={setHidden}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -3,9 +3,9 @@ import { IntroItems1, IntroItems2, IntroItems3 } from "../../Utils/Item";
 
 const Introduction = () => {
   return (
-    <div className="mx-80 mt-10 ">
+    <div className="d:mx-80 p:mx-0 mt-10 ">
       {/* <-- Section1 --> */}
-      <div className="">
+      <div className="p-2">
         <h3 className="content-style">THƯ NGỎ!</h3>
         <div className="flex flex-col gap-5 mb-4">
           <p>Kính gửi: Quý Khách hàng</p>
@@ -51,7 +51,7 @@ const Introduction = () => {
 
       {/* <-- Section2 --> */}
 
-      <div className="mt-10">
+      <div className="mt-10 p-2">
         <h3 className="content-style">TẦM NHÌN, CHẤT LƯỢNG, UY TÍN</h3>
         <div className="flex flex-col gap-5 mb-4 mt-4">
           <p>
@@ -101,7 +101,7 @@ const Introduction = () => {
 
       {/* <-- Section3 --> */}
 
-      <div className="my-10">
+      <div className="my-10 p-2">
         <h3 className="content-style">PHƯƠNG CHÂM HOẠT ĐỘNG </h3>
         <div className="flex flex-col gap-5 mb-4">
           <p>

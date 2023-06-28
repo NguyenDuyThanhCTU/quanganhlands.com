@@ -3,9 +3,9 @@ import { HomeSection5Items1 } from "../../Utils/Temp";
 
 const Construction = () => {
   return (
-    <div className="mx-80">
+    <div className="d:mx-80 p:mx-0">
       <h3 className="content-style text-center py-10">Thi công xây dựng</h3>
-      <div className="grid grid-cols-4 gap-5 ">
+      <div className="d:grid grid-cols-4 gap-5 p:flex flex-col items-center">
         {HomeSection5Items1.map((items) => (
           <div className="w-[278px]">
             <div className="w-full overflow-hidden">

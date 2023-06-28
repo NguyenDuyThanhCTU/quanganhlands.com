@@ -180,5 +180,16 @@
     color: #0a5116;
     font-size: 25px;
     font-weight: 700;
-    
   }
+  .footer-bg{
+    background-image: url('https://qhomedecor.vn/wp-content/themes/noithatskyhope/lib/images/bg-footer.png');
+  }
+  .Home-bg{
+    background-image: url('https://qhomedecor.vn/wp-content/uploads/2019/12/bg-gioithieu-1.png?id=277');
+
+  }
+  .Home-bg1{
+    background-image: url('https://qhomedecor.vn/wp-content/uploads/2019/12/bg-quytrinh.png?id=296');
+
+  }
+  

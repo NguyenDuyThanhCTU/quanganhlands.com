@@ -1,41 +1,19 @@
 import React, { useState } from "react";
-import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
-import { iconMapping } from "../../../../../../Utils/Item";
-import { FaUserFriends } from "react-icons/fa";
+// import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
-const DropDown = ({ content, title }) => {
-  const [DropDown, setDropDown] = useState(false);
+const DropDown = ({ content, link, setHidden }) => {
   return (
-    <div className="flex flex-col pl-5">
-      <div
-        className="flex items-center gap-2 font-bold text-[14px] py-2"
-        onClick={() => {
-          setDropDown(!DropDown);
-        }}
-      >
-        {DropDown ? (
-          <AiOutlineRight className="text-[16px]" />
-        ) : (
-          <AiOutlineDown className="text-[16px] " />
-        )}
-        <h3>{content}</h3>
-      </div>
-
-      <div
-        className={`${
-          DropDown ? "h-20" : "h-0"
-        } w-full duration-1000 bg-none overflow-hidden  mx-5  text-[18px]`}
-      >
-        {title.map((items) => {
-          let Icon = iconMapping[items.icon] || FaUserFriends;
-
-          return (
-            <div className="text-[14px] flex items-center gap-2 py-1">
-              {Icon && <Icon className="text-colorBlueBold text-[18px]" />}
-              <p>{items.name}</p>
-            </div>
-          );
-        })}
+    <div className="p-4 bg-white ">
+      <div className=" border-t border-gray-200 flex justify-between pt-5 items-center mx-5">
+        <Link
+          to={link}
+          onClick={() => {
+            setHidden(false);
+          }}
+        >
+          <h3 className="text-[20px] font-normal">{content}</h3>
+        </Link>
       </div>
     </div>
   );
