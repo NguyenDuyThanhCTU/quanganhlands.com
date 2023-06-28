@@ -30,8 +30,8 @@ const Footer = () => {
   };
   return (
     <>
-      <div className="relative font-Roboto">
-        <div className=" py-5 absolute w-full top-5 footer-bg">
+      <div className=" font-Roboto">
+        <div className=" py-5  w-full top-5 footer-bg">
           <div className="p-2 d:flex-row p:flex-col flex p:gap-5 d:gap-56 justify-center">
             <div>
               <h3 className="uppercase text-[25px] text-greenMain font-bold">
@@ -116,6 +116,12 @@ const Footer = () => {
               </h3>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center text-center px-2 text-[14px] font-poppins font-normal py-5 bg-black text-white font-LexendDeca">
+          <p className="pr-2">©2023 All Rights reserved ADS Company</p>
+          <p className="pl-2 border-l-[1px] border-gray-400">
+            Designed by Thanh Dev ADS Company
+          </p>
         </div>
       </div>
     </>

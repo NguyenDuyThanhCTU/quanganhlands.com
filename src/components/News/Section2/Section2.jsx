@@ -6,22 +6,16 @@ const Section2 = () => {
   const [isSelected, setIsSelected] = useState(0);
   return (
     <div className="relative ">
-      <div className="flex  relative">
-        <div className="flex-1"></div>
-        <div className="flex-1 h-[900px] bg-slate-200"></div>
-      </div>
-
-      <div className="flex flex-col  absolute top-16  w-full items-center gap-16">
-        <div className="flex justify-between w-full pr-16">
+      <div className="flex flex-col   top-16  w-full items-center gap-16">
+        <div className="flex justify-between w-full p:pr-0 d:pr-16 d:flex-row p:flex-col">
           <h3 className="text-[48px]">
             <strong>Thông tin</strong> mới nhất
           </h3>
           <div className="text-[#68737a] flex italic gap-3 cursor-pointer">
             {NewsSection2.map((items, idx) => (
               <div>
-                {" "}
                 <a
-                  className={` px-4 py-3 rounded-3xl  ${
+                  className={`d:px-5 p:px-3 py-3 rounded-3xl  ${
                     isSelected === idx ? "bg-[#1b365d] text-white " : "bg-white"
                   }`}
                   onClick={() => setIsSelected(idx)}
@@ -32,7 +26,7 @@ const Section2 = () => {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-0 w-full">
+        <div className="d:grid grid-cols-3 gap-0 w-full p:flex flex-col items-center">
           {NewsSection2Card.slice(0, 3).map((items) => (
             <>
               <Card

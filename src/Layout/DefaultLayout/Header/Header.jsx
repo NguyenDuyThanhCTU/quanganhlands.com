@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { HeaderItems } from "../../../Utils/Item";
 import { BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import logo from "./1.png";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 import DropDown from "./DropDown/DropDown";
@@ -18,11 +17,11 @@ const Header = () => {
       <div className="font-Roboto  bg-white  shadow-lg">
         <div className="p:hidden p-2 d:flex items-end justify-center gap-56 cursor-pointer">
           <div className="">
-            <img src={logo} alt="img" className="h-[100px]" />
-            <h3 className=" font-bold text-[17px]  text-green-600 uppercase">
-              {" "}
-              Quang Anh Lands
-            </h3>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/quanganhlands-24c46.appspot.com/o/img%2FfullLogo.png?alt=media&token=928702d9-7802-419f-a466-fa107e068acb"
+              alt="img"
+              className="h-[100px]"
+            />
           </div>
           <div className="flex gap-4">
             <div className="flex gap-4">
@@ -79,11 +78,11 @@ const Header = () => {
         <div className="p:block d:hidden ">
           <div className="justify-between mx-5 flex">
             <div className="py-2">
-              <img src={logo} alt="logo" className="w-48" />
-              <h3 className=" font-bold text-[20px]  text-green-600 uppercase">
-                {" "}
-                Quang Anh Lands
-              </h3>
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/quanganhlands-24c46.appspot.com/o/img%2FfullLogo.png?alt=media&token=928702d9-7802-419f-a466-fa107e068acb"
+                alt="logo"
+                className="w-48"
+              />
             </div>
             <div>
               <div className="flex items-center text-[60px]">
