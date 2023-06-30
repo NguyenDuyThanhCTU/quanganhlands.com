@@ -30,7 +30,7 @@ export const LeftSide = ({
       setAccounts(data);
     });
   }, []);
-
+  console.log(accounts);
   const HandleChangePass = () => {
     if (accounts[0].username === Username) {
       setIsChangePasswords(true);

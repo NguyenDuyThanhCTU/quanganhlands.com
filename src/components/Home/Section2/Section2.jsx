@@ -8,9 +8,9 @@ const Section2 = () => {
           <h3 className="content-style bg-none text-center ">Giới thiệu</h3>
           <div className="flex flex-col gap-3 text-[15px]">
             <p>
-              Công ty TNHH Đầu tư xây dựng nội thất Quang Minh có đội ngũ kỹ sư
-              và công nhân nhiều năm kinh nghiệm, kỹ thuật cao, đảm bảo sẽ mang
-              đến những sản phẩm tuyệt vời cho Quý khách hàng.
+              Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands có đội ngũ
+              kỹ sư và công nhân nhiều năm kinh nghiệm, kỹ thuật cao, đảm bảo sẽ
+              mang đến những sản phẩm tuyệt vời cho Quý khách hàng.
             </p>
             <p>
               Với quy mô 02 xưởng, mỗi xưởng có diện tích trên 1.000m2, chúng
@@ -25,11 +25,11 @@ const Section2 = () => {
             <p>
               Chúng tôi trân trọng cảm ơn các Quý khách hàng đã luôn đồng hành
               và tin tưởng về uy tín và chất lượng sản phẩm của Công ty TNHH Đầu
-              tư xây dựng nội thất Quang Minh trong suốt thời gian qua. Công ty
-              TNHH Đầu tư xây dựng nội thất Quang Minh sẽ không ngừng đổi mới,
-              sáng tạo để kiến tạo các sản phẩm, dịch vụ nội thất đẳng cấp với
-              mục tiêu trở thành doanh nghiệp dẫn đầu thị trường khu vực và quốc
-              tế.
+              tư xây dựng nội thất Quang Anh Lands trong suốt thời gian qua.
+              Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands sẽ không
+              ngừng đổi mới, sáng tạo để kiến tạo các sản phẩm, dịch vụ nội thất
+              đẳng cấp với mục tiêu trở thành doanh nghiệp dẫn đầu thị trường
+              khu vực và quốc tế.
             </p>
             <p>Xin chân thành cảm ơn!</p>
           </div>

@@ -6,11 +6,12 @@ import Fetch from "./Item/Fetch";
 import Footer from "./Footer/Footer";
 import TopFooter from "./TopFooter/TopFooter";
 import PopUp from "./PopUp/PopUp";
+import OnTop from "./PopUp/OnTop";
 
 const DefaultLayout = ({ children }) => {
   return (
     <>
-      <Fetch />
+      {/* <Fetch /> */}
 
       <div>
         <Header />
@@ -19,6 +20,7 @@ const DefaultLayout = ({ children }) => {
         <Footer />
       </div>
       <div>
+        <OnTop />
         <PopUp />
       </div>
     </>

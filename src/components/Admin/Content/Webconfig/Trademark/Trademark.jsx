@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useData } from "../../../../../../Context/DataProviders";
+import { useData } from "../../../../../Context/DataProviders";
 import { notification } from "antd";
-import { useStateProvider } from "../../../../../../Context/StateProvider";
-import { updateDocument } from "../../../../../../Config/Services/Firebase/FireStoreDB";
+import { useStateProvider } from "../../../../../Context/StateProvider";
+import { updateDocument } from "../../../../../Config/Services/Firebase/FireStoreDB";
 import { getStorage } from "firebase/storage";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 

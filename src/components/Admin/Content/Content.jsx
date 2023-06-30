@@ -1,4 +1,3 @@
-import { useStateProvider } from "../../../../Context/StateProvider";
 import Contact from "./Webconfig/Contact/Contact";
 import Trademark from "./Webconfig/Trademark/Trademark";
 import SocialMedia from "./SocialMedia/SocialMedia";
@@ -6,6 +5,8 @@ import Products from "./Products/Products";
 import Slide from "./Slide/Slide";
 import Banner from "./Banner/Banner";
 import ProductType from "./ProductType/ProductType";
+import { useStateProvider } from "../../../Context/StateProvider";
+import Post from "./Post/Post";
 
 const Persona = () => {
   const { isSelected } = useStateProvider();
@@ -28,7 +29,11 @@ const Persona = () => {
             <SocialMedia />
           </div>
         ) : isSelected === 3 ? (
-          <></>
+          <>
+            <div className="p-5 px-10 flex justify-start gap-10">
+              <Post />
+            </div>
+          </>
         ) : isSelected === 4 ? (
           <div className="p-5 px-10 flex justify-start gap-10">
             {" "}

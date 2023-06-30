@@ -5,9 +5,9 @@ import { MdDeleteForever } from "react-icons/md";
 import { TbCircleDashed } from "react-icons/tb";
 
 import { Popconfirm, message } from "antd";
-import { useStateProvider } from "../../../../../Context/StateProvider";
-import { delDocument } from "../../../../../Config/Services/Firebase/FireStoreDB";
-import { useData } from "../../../../../Context/DataProviders";
+import { useStateProvider } from "../../../../Context/StateProvider";
+import { delDocument } from "../../../../Config/Services/Firebase/FireStoreDB";
+import { useData } from "../../../../Context/DataProviders";
 
 const ProductType = () => {
   const { setIsUploadProduct, setIsRefetch } = useStateProvider();

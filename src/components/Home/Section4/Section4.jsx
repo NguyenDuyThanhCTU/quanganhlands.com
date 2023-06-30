@@ -25,7 +25,7 @@ const Section4 = () => {
           Với khát khao chinh phục đỉnh cao bằng sự chuyên nghiệp, uy tín, chúng
           tôi sẽ không ngừng sáng tạo, phấn đấu, học hỏi để tự hoàn thiện với
           mục tiêu phát triển doanh nghiệp một cách bền vững. Công ty TNHH Đầu
-          tư xây dựng nội thất Quang Minh cung cấp cho khách hàng Quy trình
+          tư xây dựng nội thất Quang Anh Lands cung cấp cho khách hàng Quy trình
           thiết kế thi công hoàn thiện nội thất trọn gói. Tất cả các sản phẩm
           đều được kiểm tra kỹ từng chi tiết trước khi bàn giao đến tay khánh
           hàng.

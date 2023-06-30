@@ -3,8 +3,8 @@ import { AiFillCloseCircle } from "react-icons/ai";
 
 import { notification } from "antd";
 
-import { useStateProvider } from "../../../../../../Context/StateProvider";
-import { addDocument } from "../../../../../../Config/Services/Firebase/FireStoreDB";
+import { useStateProvider } from "../../../../../Context/StateProvider";
+import { addDocument } from "../../../../../Config/Services/Firebase/FireStoreDB";
 import Input from "../../Item/Input";
 
 const AddType = () => {

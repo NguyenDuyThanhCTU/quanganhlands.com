@@ -15,7 +15,7 @@ const Card = ({
   setChange,
   isSelected,
   HandleUpdate,
-  id,
+  placeholder,
 }) => {
   return (
     <div className="py-3 flex flex-col gap-5 bg-[#353535] rounded-md justify-between shadow-xl cursor-pointer hover:shadow-slate-600 duration-300">
@@ -65,7 +65,7 @@ const Card = ({
         <div className="" onClick={() => setSelected(idx)}>
           <input
             type="text "
-            placeholder={data}
+            placeholder={placeholder}
             className="outline-none text-black py-2 px-3 rounded-md w-full"
             onChange={(e) => setChange(e.target.value)}
           />
@@ -76,7 +76,7 @@ const Card = ({
           {" "}
           <div
             className="text-center duration-300 uppercase py-2 border mx-2 bg-purple hover:bg-purpleAdmin hover:text-purpleHover hover:border-purpleHover text-blueAdmin border-blueAdmin "
-            onClick={() => HandleUpdate(id)}
+            onClick={() => HandleUpdate(idx)}
           >
             Cập nhật
           </div>

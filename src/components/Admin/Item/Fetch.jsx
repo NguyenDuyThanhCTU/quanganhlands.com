@@ -37,16 +37,16 @@ const Fetch = () => {
       setAddress(data[0].address);
     });
     getDocuments("website").then((data) => {
-      setLogo(data[2].websiteLogo);
-      setWebsiteName(data[2].websiteName);
+      setLogo(data[3].websiteLogo);
+      setWebsiteName(data[3].websiteName);
     });
     getDocuments("website").then((data) => {
       setBanner(data[1].Slide0);
       setAdvertisement(data[1].advertisement);
     });
 
-    getDocuments("SocialMedia").then((data) => {
-      setSocialMedia(data);
+    getDocuments("website").then((data) => {
+      setSocialMedia(data[2].Data);
     });
 
     getProducts("ProductSize").then((data) => {

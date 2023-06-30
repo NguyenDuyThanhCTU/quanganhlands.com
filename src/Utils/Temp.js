@@ -2,19 +2,33 @@ export const HomeSection3CarsItem = [
   {
     content: "THIẾT KẾ NỘI THẤT",
     title:
-      "Công ty TNHH Đầu tư xây dựng nội thất Quang Minh sẵn sàng tư vấn các giải pháp kỹ thuật, tư vấn thiết kế và thực hiện theo yêu cầu của khách hàng. Đặc biệt, với đội ngũ kiến trúc sư giàu kinh nghiệm, sáng tạo và đầy nhiệt huyết, chúng tôi sẽ tư vấn những giải pháp thiết thực, phù hợp nhất cho bạn và gia đình.",
+      "Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands sẵn sàng tư vấn các giải pháp kỹ thuật, tư vấn thiết kế và thực hiện theo yêu cầu của khách hàng. Đặc biệt, với đội ngũ kiến trúc sư giàu kinh nghiệm, sáng tạo và đầy nhiệt huyết, chúng tôi sẽ tư vấn những giải pháp thiết thực, phù hợp nhất cho bạn và gia đình.",
     image: "https://qhomedecor.vn/wp-content/uploads/2020/10/chungtoi1.png",
   },
   {
     content: "THI CÔNG NỘI THẤT",
     title:
-      "Chúng tôi hiểu rằng từ bản vẽ thiết kế đến việc thi công nội thất là hai khái niệm khác nhau, do đó, đội ngũ kiến trúc sự của Công ty TNHH Đầu tư xây dựng nội thất Quang Minh phải là những người am hiểu về từng sản phẩm mà mình tạo ra để đưa đến cho khách hàng có khả thi và đáp ứng đúng những về yêu cầu về thẩm mỹ của khách hàng hay không.",
+      "Chúng tôi hiểu rằng từ bản vẽ thiết kế đến việc thi công nội thất là hai khái niệm khác nhau, do đó, đội ngũ kiến trúc sự của Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands phải là những người am hiểu về từng sản phẩm mà mình tạo ra để đưa đến cho khách hàng có khả thi và đáp ứng đúng những về yêu cầu về thẩm mỹ của khách hàng hay không.",
     image: "https://qhomedecor.vn/wp-content/uploads/2019/12/phong-khach-2.png",
   },
   {
     content: "THI CÔNG XÂY DỰNG",
     title:
-      "Ngoải ra, Công ty TNHH Đầu tư xây dựng nội thất Quang Minh còn thực hiện các dịch vụ thi công xây dựng, hoàn thiện công trình, thi công lắp đặt, sửa chữa, cải tạo, phá dỡ các hạng mục công trình …",
+      "Ngoải ra, Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands còn thực hiện các dịch vụ thi công xây dựng, hoàn thiện công trình, thi công lắp đặt, sửa chữa, cải tạo, phá dỡ các hạng mục công trình …",
+    image:
+      "https://qhomedecor.vn/wp-content/uploads/2019/12/thi-cong-xay-dung-1.jpg",
+  },
+  {
+    content: "THI CÔNG XÂY DỰNG",
+    title:
+      "Ngoải ra, Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands còn thực hiện các dịch vụ thi công xây dựng, hoàn thiện công trình, thi công lắp đặt, sửa chữa, cải tạo, phá dỡ các hạng mục công trình …",
+    image:
+      "https://qhomedecor.vn/wp-content/uploads/2019/12/thi-cong-xay-dung-1.jpg",
+  },
+  {
+    content: "THI CÔNG XÂY DỰNG",
+    title:
+      "Ngoải ra, Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands còn thực hiện các dịch vụ thi công xây dựng, hoàn thiện công trình, thi công lắp đặt, sửa chữa, cải tạo, phá dỡ các hạng mục công trình …",
     image:
       "https://qhomedecor.vn/wp-content/uploads/2019/12/thi-cong-xay-dung-1.jpg",
   },

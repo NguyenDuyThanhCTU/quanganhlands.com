@@ -193,3 +193,6 @@
 
   }
   
+  .cols-4{
+grid-template-columns: 5% 20% 20% 55%;
+  }

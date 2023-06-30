@@ -1,30 +1,36 @@
 import React, { useState } from "react";
 
 import Card from "./Card/Card";
-import { useData } from "../../../../../Context/DataProviders";
-import { updateDocument } from "../../../../../Config/Services/Firebase/FireStoreDB";
+import { useData } from "../../../../Context/DataProviders";
+import {
+  updateArrayFieldAtIndex,
+  updateDocument,
+} from "../../../../Config/Services/Firebase/FireStoreDB";
 import { notification } from "antd";
-import { iconMapping } from "../../../../../Utils/Item";
-import { useStateProvider } from "../../../../../Context/StateProvider";
+import { SocialMediaDashboard, iconMapping } from "../../../../Utils/Item";
+import { useStateProvider } from "../../../../Context/StateProvider";
 
 const SocialMedia = () => {
   const { setIsRefetch } = useStateProvider();
-  const { SocialMedia } = useData();
   const [isSelected, setSelected] = useState();
   const [isChange, setChange] = useState("");
+  const { SocialMedia } = useData();
 
-  const HandleUpdate = (id) => {
-    const newData = {
-      data: isChange,
-    };
-    updateDocument("SocialMedia", id, newData).then(() => {
-      notification["success"]({
-        message: "Cập nhật thành công",
-        description: `Thông tin ${id} của bạn đã được cập nhật !`,
-      });
-      setIsRefetch("SocialMedia");
-    });
+  const HandleUpdate = (idx) => {
+    const data = isChange;
+
+    updateArrayFieldAtIndex("website", "SocialMedia", "Data", data, idx).then(
+      () => {
+        notification["success"]({
+          message: "Thành công !",
+          description: `
+          Thông tin của bạn đã được cập nhật !`,
+        });
+        setIsRefetch("SocialMedia");
+      }
+    );
   };
+
   const HandleDelete = () => {};
   return (
     <div className="">
@@ -33,19 +39,18 @@ const SocialMedia = () => {
           Các kênh truyền thông
         </h3>
         <div className="p-5 grid grid-cols-4 gap-10 ">
-          {SocialMedia.map((items, idx) => {
+          {SocialMediaDashboard.map((items, idx) => {
             let Icon = iconMapping[items.icon];
-
+            const SocialMediaItems = SocialMedia[idx];
             return (
               <Card
+                placeholder={SocialMediaItems}
                 title={items.title}
                 Icon={Icon}
                 image={items.image}
                 style={items.style}
-                data={items.data}
                 setSelected={setSelected}
                 idx={idx}
-                id={items.id}
                 setChange={setChange}
                 isSelected={isSelected}
                 HandleUpdate={HandleUpdate}

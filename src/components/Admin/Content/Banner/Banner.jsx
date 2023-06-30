@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useData } from "../../../../../Context/DataProviders";
+import { useData } from "../../../../Context/DataProviders";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,8 +11,8 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 
 import { getStorage } from "firebase/storage";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { updateArrayFieldAtIndex } from "../../../../../Config/Services/Firebase/FireStoreDB";
-import { useStateProvider } from "../../../../../Context/StateProvider";
+import { updateArrayFieldAtIndex } from "../../../../Config/Services/Firebase/FireStoreDB";
+import { useStateProvider } from "../../../../Context/StateProvider";
 import { notification } from "antd";
 
 const Banner = () => {

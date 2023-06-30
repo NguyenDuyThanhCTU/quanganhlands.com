@@ -5,7 +5,7 @@ const News = () => {
   return (
     <div className="p:mx-0 d:mx-[300px] py-10">
       <Section2 />
-      {/* <Section3 /> */}
+      <Section3 />
     </div>
   );
 };

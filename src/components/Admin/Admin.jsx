@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 import Header from "./Header/Header";
 
 import Sidebar from "./Sidebar/Sidebar";
-import Persona from "./Content/Persona/Persona";
 import { RxCrossCircled } from "react-icons/rx";
 import { FaList } from "react-icons/fa";
 import Fetch from "./Item/Fetch";
 import { useStateProvider } from "../../Context/StateProvider";
-import AddProduct from "./Content/Persona/Products/LeftSide/AddProduct.jsx/AddProduct";
-import AddType from "./Content/Persona/ProductType/AddType/AddType";
+import AddProduct from "./Content/Products/LeftSide/AddProduct.jsx/AddProduct";
+import AddType from "./Content/ProductType/AddType/AddType";
+import Content from "../Admin/Content/Content";
+import AddPost from "../Admin/Content/Post/AddPost/AddPost";
 
 const Admin = () => {
   const { verify } = useAuth();
@@ -34,6 +35,8 @@ const Admin = () => {
           <AddProduct />
         ) : isUploadProduct === 2 ? (
           <AddType />
+        ) : isUploadProduct === 3 ? (
+          <AddPost />
         ) : null}
       </div>
 
@@ -61,7 +64,7 @@ const Admin = () => {
       <div className="w-[1570px] bg-[#292929]">
         <Header />
         <div>
-          <Persona />
+          <Content />
         </div>
       </div>
     </div>

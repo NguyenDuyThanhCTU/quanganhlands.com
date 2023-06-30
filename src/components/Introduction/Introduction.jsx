@@ -10,14 +10,14 @@ const Introduction = () => {
         <div className="flex flex-col gap-5 mb-4">
           <p>Kính gửi: Quý Khách hàng</p>
           <p>
-            Công ty TNHH Đầu tư xây dựng nội thất Quang Minh là Công ty chuyên
-            Xây dựng – Thiết kế – Thi Công – Hoàn thiện nội ngoại thất các công
-            trình dân dụng và công nghiệp có uy tín tại Hà Nội.
+            Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands là Công ty
+            chuyên Xây dựng – Thiết kế – Thi Công – Hoàn thiện nội ngoại thất
+            các công trình dân dụng và công nghiệp có uy tín tại Hà Nội.
           </p>
           <p>
             Nhằm đáp ứng nhu cầu thị trường về xây dựng và trang trí nội ngoại
             thất ngày càng đa dạng về mẫu mã, phong phú về kiểu dáng, màu sắc,
-            Công ty TNHH Đầu tư xây dựng nội thất Quang Minh luôn xác định bằng
+            Công ty TNHH Đầu tư xây dựng nội thất Quang Anh luôn xác định bằng
             tất cả những nỗ lực của toàn thể nhân viên trong công ty sẽ mang đến
             cho Quý Khách hàng những sản phẩm hoàn thiện có chất lượng cao và
             các dịch vụ hậu mãi chu đáo, tận tình.
@@ -28,9 +28,9 @@ const Introduction = () => {
             từ chi tiết nhỏ nhất.
           </p>
           <p>
-            Đến với Công ty TNHH Đầu tư xây dựng nội thất Quang Minh, Quý Khách
-            sẽ được sử dụng dịch vụ hoàn chỉnh từ thiết kế đến khi đưa vào sử
-            dụng với dịch vụ bảo trì chu đáo, chuyên nghiệp.
+            Đến với Công ty TNHH Đầu tư xây dựng nội thất Quang Anh Lands, Quý
+            Khách sẽ được sử dụng dịch vụ hoàn chỉnh từ thiết kế đến khi đưa vào
+            sử dụng với dịch vụ bảo trì chu đáo, chuyên nghiệp.
           </p>
           <p>Trân trọng!</p>
           <p>
@@ -58,18 +58,18 @@ const Introduction = () => {
             <strong>TẦM NHÌN</strong>
           </p>
           <p>
-            Công ty TNHH Đầu tư xây dựng nội thất Quang Minh đặt mục tiêu sẽ
-            phát triển vươn lên là một trong những Công ty xây dựng – Thiết kế –
-            Thi công – Hoàn thiện nội ngoại thất hàng đầu tại Hà Nội.
+            Công ty TNHH Đầu tư xây dựng nội thất Quang Anh đặt mục tiêu sẽ phát
+            triển vươn lên là một trong những Công ty xây dựng – Thiết kế – Thi
+            công – Hoàn thiện nội ngoại thất hàng đầu tại Hà Nội.
           </p>
           <p>
             <strong>CHẤT LƯỢNG</strong>
           </p>
           <div>
             <p>
-              Công ty TNHH Đầu tư xây dựng nội thất Quang Minh luôn chú trọng
-              đến chất lượng của từng mặt hàng, sự hàng lòng của khách hàng
-              chính là thành công của chúng tôi.
+              Công ty TNHH Đầu tư xây dựng nội thất Quang Anh luôn chú trọng đến
+              chất lượng của từng mặt hàng, sự hàng lòng của khách hàng chính là
+              thành công của chúng tôi.
             </p>
             <p>
               Đội ngũ kiến trúc sư chuyên nghiệp luôn cập nhật các sản phẩm nội
@@ -83,11 +83,11 @@ const Introduction = () => {
           </div>
           <strong>UY TÍN</strong>
           <p>
-            Công ty TNHH Đầu tư xây dựng nội thất Quang Minh luôn tìm kiếm để
-            đưa đến cho khách hàng các sản phẩm hoàn thiện nội ngoại thất có
-            chất lượng cao, phù hợp với nhu cầu và thị hiếu của khách hàng. Tất
-            cả các sản phẩm đều được kiểm tra kỹ từng chi tiết trước khi bàn
-            giao đến tay khánh hàng.
+            Công ty TNHH Đầu tư xây dựng nội thất Quang Anh luôn tìm kiếm để đưa
+            đến cho khách hàng các sản phẩm hoàn thiện nội ngoại thất có chất
+            lượng cao, phù hợp với nhu cầu và thị hiếu của khách hàng. Tất cả
+            các sản phẩm đều được kiểm tra kỹ từng chi tiết trước khi bàn giao
+            đến tay khánh hàng.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-5">
@@ -131,7 +131,7 @@ const Introduction = () => {
             <strong className="text-[20px]">Làm việc chuyên nghiệp </strong>
           </p>
           <p>
-            Nhân sự Công ty TNHH Đầu tư xây dựng nội thất Quang Minh luôn làm
+            Nhân sự Công ty TNHH Đầu tư xây dựng nội thất Quang Anh luôn làm
             việc với tinh thần nhiệt huyết, có trách nhiệm cao để đảm bảo mang
             đến cho khách hàng sản phẩm và dịch vụ chất lượng nhất.
           </p>

@@ -5,11 +5,11 @@ import { MdDeleteForever } from "react-icons/md";
 import { TbCircleDashed } from "react-icons/tb";
 
 import { Popconfirm, message } from "antd";
-import { useStateProvider } from "../../../../../Context/StateProvider";
+import { useStateProvider } from "../../../../Context/StateProvider";
 import {
   delDocument,
   getProducts,
-} from "../../../../../Config/Services/Firebase/FireStoreDB";
+} from "../../../../Config/Services/Firebase/FireStoreDB";
 
 const LeftSide = () => {
   const [DataFetch, setDataFetch] = useState([]);

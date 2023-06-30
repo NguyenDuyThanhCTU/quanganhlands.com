@@ -7,10 +7,10 @@ import { getStorage } from "firebase/storage";
 
 import { notification } from "antd";
 
-import { useStateProvider } from "../../../../../../../Context/StateProvider";
+import { useStateProvider } from "../../../../../Context/StateProvider";
 import Input from "../../../Item/Input";
-import { useData } from "../../../../../../../Context/DataProviders";
-import { addDocument } from "../../../../../../../Config/Services/Firebase/FireStoreDB";
+import { useData } from "../../../../../Context/DataProviders";
+import { addDocument } from "../../../../../Config/Services/Firebase/FireStoreDB";
 
 const AddProduct = () => {
   const [imageUrl, setImageUrl] = useState();
@@ -87,7 +87,7 @@ const AddProduct = () => {
         <div className="justify-center   w-full flex items-center gap-20">
           <div className="">
             <div className="">
-              <p className="text-2xl font-bold">Tải ảnh lên</p>
+              <p className="text-2xl font-bold">Tải ảnh lêaasan</p>
               <p className="text-md text-gray-400 mt-1">
                 Chọn ảnh cho sản phẩm của bạn
               </p>
