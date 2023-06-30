@@ -2,9 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/navigation";
 
-import { Navigation } from "swiper";
+import { Autoplay } from "swiper";
 
 const Section1 = () => {
   return (
@@ -12,8 +11,11 @@ const Section1 = () => {
       <div className="relative">
         <Swiper
           loop={true}
-          navigation={true}
-          modules={[Navigation]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>

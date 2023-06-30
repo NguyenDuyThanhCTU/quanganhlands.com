@@ -8,16 +8,11 @@ import {
 } from "../../../../Config/Services/Firebase/FireStoreDB";
 import { HomeSection3CarsItem } from "../../../../Utils/Temp";
 import Section from "./Section/Section";
+import { useData } from "../../../../Context/DataProviders";
 
 const Post = () => {
-  const [DataFetch, setDataFetch] = useState([]);
-  const { isUploadProduct, setIsUploadProduct } = useStateProvider();
-
-  useEffect(() => {
-    getProducts("products").then((data) => {
-      setDataFetch(data.reverse());
-    });
-  }, [isUploadProduct]);
+  const { setIsUploadProduct } = useStateProvider();
+  const { HomePosts, NewsPosts } = useData();
 
   const HandleDelete = (id) => {
     delDocument("products", id).then(() => {
@@ -35,19 +30,19 @@ const Post = () => {
         <div className="mt-5 border rounded-xl ">
           <Section
             title="Trang chủ"
-            Data={HomeSection3CarsItem}
+            Data={HomePosts}
             HandleDelete={HandleDelete}
             setIsUploadProduct={setIsUploadProduct}
           />
-          <Section
+          {/* <Section
             title="Giới thiệu"
             Data={HomeSection3CarsItem}
             HandleDelete={HandleDelete}
             setIsUploadProduct={setIsUploadProduct}
-          />
+          /> */}
           <Section
             title="Tin tức"
-            Data={HomeSection3CarsItem}
+            Data={NewsPosts}
             HandleDelete={HandleDelete}
             setIsUploadProduct={setIsUploadProduct}
           />

@@ -28,15 +28,17 @@ const Admin = () => {
     <div className="grid grid-flow-col font-LexendDeca relative">
       <div
         className={`duration-300 absolute left-0 right-0  ${
-          isUploadProduct === 0 ? "h-0" : "h-[100vh]"
+          isUploadProduct === "" ? "h-0" : "h-[100vh]"
         }`}
       >
         {isUploadProduct === 1 ? (
           <AddProduct />
         ) : isUploadProduct === 2 ? (
           <AddType />
-        ) : isUploadProduct === 3 ? (
-          <AddPost />
+        ) : isUploadProduct === "Trang chủ" ? (
+          <AddPost type="Home" />
+        ) : isUploadProduct === "Tin tức" ? (
+          <AddPost type="News" />
         ) : null}
       </div>
 

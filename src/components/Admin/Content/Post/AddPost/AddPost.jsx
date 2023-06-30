@@ -9,25 +9,23 @@ import { notification } from "antd";
 
 import { useStateProvider } from "../../../../../Context/StateProvider";
 import Input from "../../../Item/Input";
-import { useData } from "../../../../../Context/DataProviders";
 import { addDocument } from "../../../../../Config/Services/Firebase/FireStoreDB";
 
-const AddProduct = () => {
+const AddProduct = ({ type }) => {
   const [imageUrl, setImageUrl] = useState();
-  const [name, setName] = useState("");
-  const [brickSize, setBrickSize] = useState("15x90");
-  const [brickType, setBrickType] = useState("GC");
+  const [Title, setTitle] = useState("");
+  const [Content, setContent] = useState("");
   const [error, setError] = useState(false);
   const { setIsUploadProduct } = useStateProvider();
-  const { BrickSize, BrickType } = useData();
+
   const handleDiscard = () => {
     setImageUrl();
-    setName("");
-    setBrickSize(1);
+    setTitle("");
+    setContent("");
   };
 
   const HandleSubmit = () => {
-    if (!imageUrl || !name) {
+    if (!Title || !Content) {
       notification["error"]({
         message: "Tải lên không thành công!",
         description: `Vui lòng bổ sung đầy đủ thông tin !`,
@@ -35,11 +33,16 @@ const AddProduct = () => {
     } else {
       const data = {
         image: imageUrl,
-        name: name,
-        brickSize: brickSize,
-        brickType: brickType,
+        content: Content,
+        title: Title,
       };
-      addDocument("products", data).then(() => {
+      let collection = "";
+      if ((type = "Home")) {
+        collection = "homepost";
+      } else if (type === "News") {
+        collection = "newspost";
+      }
+      addDocument(collection, data).then(() => {
         notification["success"]({
           message: "Tải lên thành công!",
           description: `Sản phẩm của bạn đã được tải lên !`,
@@ -55,7 +58,12 @@ const AddProduct = () => {
 
     if (filetypes.includes(selectImage.type)) {
       const storage = getStorage();
-      const storageRef = ref(storage, `sanpham/${selectImage.name}`);
+      let storageRef = ref(storage, `${selectImage.name}`);
+      if (type === "Home") {
+        storageRef = ref(storage, `Post/Home/${selectImage.name}`);
+      } else if (type === "News") {
+        storageRef = ref(storage, `Post/News/${selectImage.name}`);
+      }
 
       uploadBytes(storageRef, selectImage)
         .then((snapshot) => {
@@ -87,9 +95,9 @@ const AddProduct = () => {
         <div className="justify-center   w-full flex items-center gap-20">
           <div className="">
             <div className="">
-              <p className="text-2xl font-bold">Tải ảnh lêaasan</p>
+              <p className="text-2xl font-bold">Tải ảnh lên bài viết của bạn</p>
               <p className="text-md text-gray-400 mt-1">
-                Chọn ảnh cho sản phẩm của bạn
+                Chọn ảnh cho bài viết của bạn
               </p>
             </div>
             <div className=" border-dashed rounded-xl border-4 border-gray-200 flex flex-col justify-center items-center  outline-none mt-10 w-[260px] h-[458px] p-10 cursor-pointer hover:border-red-300 hover:bg-gray-100">
@@ -147,9 +155,20 @@ const AddProduct = () => {
           </div>
           <div className="flex items-center gap-10">
             <form class=" max-w-lg w-[500px]">
-              <Input text="Tên sản phẩm" Value={name} setValue={setName} />
+              <Input
+                text="Tiêu đề bài viết"
+                Value={Title}
+                setValue={setTitle}
+                type="input"
+              />
+              <Input
+                text="Nội dung bài viết"
+                Value={Content}
+                setValue={setContent}
+                type="textarea"
+              />
 
-              <div className="flex flex-col gap-4">
+              {/* <div>
                 <label className="text-md font-medium ">Kích thước gạch</label>
                 <select
                   className="outline-none lg:w-650 border-2 border-gray-200 text-md capitalize lg:p-4 p-2 rounded cursor-pointer"
@@ -167,25 +186,7 @@ const AddProduct = () => {
                     </option>
                   ))}
                 </select>
-
-                <label className="text-md font-medium ">Loại gạch</label>
-                <select
-                  className="outline-none lg:w-650 border-2 border-gray-200 text-md capitalize lg:p-4 p-2 rounded cursor-pointer"
-                  onChange={(e) => {
-                    setBrickType(e.target.value);
-                  }}
-                >
-                  {BrickType?.map((item) => (
-                    <option
-                      key={item.id}
-                      className=" outline-none capitalize bg-white text-gray-700 text-md p-2 hover:bg-slate-300"
-                      value={item.name}
-                    >
-                      {item.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              </div> */}
 
               <div className="flex gap-6 mt-10">
                 <button
@@ -211,7 +212,7 @@ const AddProduct = () => {
         <AiFillCloseCircle
           className="absolute -top-5 -right-5 text-[40px] border-white border-4 bg-black rounded-3xl text-white "
           onClick={() => {
-            setIsUploadProduct(0);
+            setIsUploadProduct("");
           }}
         />
       </div>

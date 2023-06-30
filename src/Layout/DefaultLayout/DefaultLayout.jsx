@@ -11,7 +11,7 @@ import OnTop from "./PopUp/OnTop";
 const DefaultLayout = ({ children }) => {
   return (
     <>
-      {/* <Fetch /> */}
+      <Fetch />
 
       <div>
         <Header />

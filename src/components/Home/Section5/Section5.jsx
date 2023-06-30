@@ -10,7 +10,7 @@ const Section5 = () => {
         </h3>
         <div className="flex d:gap-16 p:gap-3 justify-center items-center d:flex-row p:flex-col">
           {HomeSection5Items.slice(0, 4).map((items) => (
-            <div className="w-[278px]">
+            <div className="w-[278px] shadow-xl hover:shadow-2xl">
               <div className="w-full overflow-hidden">
                 <img
                   src={items.image}
@@ -18,7 +18,11 @@ const Section5 = () => {
                   className="hover:scale-110 duration-300"
                 />
               </div>
-              <h3 className="font-bold text-center  p-2">{items.content}</h3>
+              <div className="p-3">
+                <h3 className="font-bold text-center truncate2   ">
+                  {items.content}
+                </h3>
+              </div>
             </div>
           ))}
         </div>
@@ -29,7 +33,7 @@ const Section5 = () => {
         </h3>
         <div className="flex d:gap-16 p:gap-3 justify-center items-center d:flex-row p:flex-col">
           {HomeSection5Items1.slice(0, 4).map((items) => (
-            <div className="w-[278px]">
+            <div className="w-[278px] shadow-xl hover:shadow-2xl">
               <div className="w-full overflow-hidden">
                 <img
                   src={items.image}
@@ -37,7 +41,11 @@ const Section5 = () => {
                   className="hover:scale-110 duration-300"
                 />
               </div>
-              <h3 className="font-bold text-center  p-2">{items.content}</h3>
+              <div className="p-3">
+                <h3 className="font-bold text-center truncate2   ">
+                  {items.content}
+                </h3>
+              </div>
             </div>
           ))}
         </div>

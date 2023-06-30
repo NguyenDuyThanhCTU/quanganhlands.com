@@ -25,13 +25,18 @@ export const DataProviders = ({ children }) => {
   const [Zalo, setZalo] = useState();
   const [Youtube, setYoutube] = useState();
   // Custom
-  const [BrickSize, setBrickSize] = useState([]);
-  const [BrickType, setBrickType] = useState([]);
+
   const [Advertisement, setAdvertisement] = useState([]);
+  const [HomePosts, setHomePosts] = useState([]);
+  const [NewsPosts, setNewsPosts] = useState([]);
 
   return (
     <DataContext.Provider
       value={{
+        NewsPosts,
+        setNewsPosts,
+        HomePosts,
+        setHomePosts,
         Facebook,
         setFacebook,
         Fanpages,
@@ -64,10 +69,6 @@ export const DataProviders = ({ children }) => {
 
         Phone,
         setPhone,
-        BrickSize,
-        setBrickSize,
-        BrickType,
-        setBrickType,
         Banner,
         setBanner,
         Location,

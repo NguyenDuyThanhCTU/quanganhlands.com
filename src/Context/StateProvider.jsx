@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState } from "react";
 const StateContext = createContext();
 
 export const StateProvider = ({ children }) => {
-  const [isUploadProduct, setIsUploadProduct] = useState(0);
+  const [isUploadProduct, setIsUploadProduct] = useState("");
   const [isSelected, setSelected] = useState(0);
 
   const [SortBySize, setSortBySize] = useState(" ");

@@ -1,7 +1,9 @@
 import React from "react";
-import { HomeSection3CarsItem } from "../../../Utils/Temp";
-
+import { useData } from "../../../Context/DataProviders";
+import moment from "moment";
 const Section3 = () => {
+  const { HomePosts } = useData();
+
   return (
     <>
       <div className=" py-9">
@@ -10,17 +12,27 @@ const Section3 = () => {
         </h3>
         <div className="">
           <div className="p-2 d:flex-row p:flex-col flex justify-center gap-10">
-            {HomeSection3CarsItem.map((items) => (
-              <>
-                <div className="d:w-[380px] h-[425px] flex flex-col justify-between">
-                  <div>
-                    <h3 className="content-style ">{items.content}</h3>
-                    <p>{items.title}</p>
+            {HomePosts.slice(0, 3).map((items) => {
+              const formattedDate = moment
+                .unix(items.createdAt.seconds)
+                .format("MMMM DD, YYYY");
+              return (
+                <>
+                  <div className="d:w-[380px] h-[425px] flex flex-col justify-start hover:shadow-2xl shadow-xl cursor-pointer  rounded-xl">
+                    <img
+                      src={items.image}
+                      alt="image"
+                      className="w-[380px]  rounded-t-xl"
+                    />
+                    <div className="p-4">
+                      <p>{formattedDate}</p>
+                      <h3 className="content-style ">{items.title}</h3>
+                      <p className="truncate5 ">{items.content} </p>
+                    </div>
                   </div>
-                  <img src={items.image} alt="image" className="w-[380px]" />
-                </div>
-              </>
-            ))}
+                </>
+              );
+            })}
           </div>
         </div>
       </div>

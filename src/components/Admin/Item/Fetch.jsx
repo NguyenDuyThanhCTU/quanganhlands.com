@@ -10,8 +10,6 @@ import {
 const Fetch = () => {
   const {
     setPhone,
-    setBrickSize,
-    setBrickType,
     setAdvertisement,
     setBanner,
     setLocation,
@@ -20,8 +18,10 @@ const Fetch = () => {
     setProducts,
     setGmail,
     setAddress,
+    setHomePosts,
+    setSocialMedia,
+    setNewsPosts,
   } = useData();
-  const { setSocialMedia } = useData();
 
   const { isRefetch, setIsRefetch } = useStateProvider();
 
@@ -31,29 +31,26 @@ const Fetch = () => {
 
   useEffect(() => {
     getDocuments("website").then((data) => {
+      //Contact
       setPhone(data[0].phone);
       setGmail(data[0].gmail);
       setLocation(data[0].location);
       setAddress(data[0].address);
-    });
-    getDocuments("website").then((data) => {
+      //Slide
+      setBanner(data[1].Slide0);
+      setAdvertisement(data[1].advertisement);
+      //SocialMedia
+      setSocialMedia(data[2].Data);
+      //Trademark
       setLogo(data[3].websiteLogo);
       setWebsiteName(data[3].websiteName);
     });
-    getDocuments("website").then((data) => {
-      setBanner(data[1].Slide0);
-      setAdvertisement(data[1].advertisement);
-    });
 
-    getDocuments("website").then((data) => {
-      setSocialMedia(data[2].Data);
+    getProducts("homepost").then((data) => {
+      setHomePosts(data.reverse());
     });
-
-    getProducts("ProductSize").then((data) => {
-      setBrickSize(data.reverse());
-    });
-    getProducts("ProductTypes").then((data) => {
-      setBrickType(data.reverse());
+    getProducts("newspost").then((data) => {
+      setNewsPosts(data.reverse());
     });
 
     getDocuments("products").then((data) => {

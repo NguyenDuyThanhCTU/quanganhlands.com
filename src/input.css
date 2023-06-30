@@ -41,11 +41,25 @@
     }
   }
 
-.truncate {
-    white-space: nowrap; 
-    text-overflow: ellipsis; 
-    overflow: hidden; 
+  .truncate5 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
   }
+  
+  .truncate2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+  }
+  
+  
+  
+  
 
 
   .call-animation {
@@ -193,6 +207,6 @@
 
   }
   
-  .cols-4{
-grid-template-columns: 5% 20% 20% 55%;
+  .cols-5{
+grid-template-columns: 5% 20% 10% 10% 55%;
   }
