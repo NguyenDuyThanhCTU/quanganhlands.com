@@ -13,6 +13,7 @@ module.exports = {
       },
 
       colors: {
+        MainColor: "#7D0A0F",
         Blue3D: "#1D1D3D",
         BlueFF: "#1A49FF",
         BlueFFhover: "#002DD2",
@@ -22,7 +23,6 @@ module.exports = {
         blueAdmin: "#74affc",
         purpleAdmin: "#bb86fc37",
         purpleHover: "#BB86FC",
-        greenMain: "#0a5116",
       },
     },
   },

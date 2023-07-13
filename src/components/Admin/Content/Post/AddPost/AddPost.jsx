@@ -32,8 +32,7 @@ const AddProduct = ({ type }) => {
       });
     } else {
       const data = {
-        image:
-          "https://qhomedecor.vn/wp-content/uploads/2020/10/living-room-design-urban-jungle-style-by-lilla-home-scaled.jpg",
+        image: imageUrl,
         content: Content,
         title: Title,
       };

@@ -28,7 +28,7 @@ const Header = () => {
               {HeaderItems.map((items, idx) => (
                 <div
                   className={`uppercase mb-5 cursor-pointer font-bold text-[15px] : relative group ${
-                    isSelected === idx && "text-greenMain"
+                    isSelected === idx && "text-MainColor"
                   }`}
                   onClick={() => {
                     setSelected(idx);

@@ -34,7 +34,7 @@ const Footer = () => {
         <div className=" py-5  w-full top-5 footer-bg">
           <div className="p-2 d:flex-row p:flex-col flex p:gap-5 d:gap-56 justify-center">
             <div>
-              <h3 className="uppercase text-[25px] text-greenMain font-bold">
+              <h3 className="uppercase text-[25px] text-MainColor font-bold">
                 Địa chỉ
               </h3>
               <div>
@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <h3 className="uppercase text-[25px] mb-4 text-greenMain font-bold">
+              <h3 className="uppercase text-[25px] mb-4 text-MainColor font-bold">
                 Đăng ký tư vấn ngay
               </h3>
               <div className="flex flex-col p:items-start d:items-end gap-5 w-full">
@@ -103,7 +103,7 @@ const Footer = () => {
                 </div>
 
                 <div
-                  className="cursor-pointer px-10 py-2  bg-greenMain text-white"
+                  className="cursor-pointer px-10 py-2  bg-MainColor text-white"
                   onClick={() => HandleSubmit()}
                 >
                   Đăng ký
@@ -111,7 +111,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <h3 className="uppercase text-[25px] text-greenMain font-bold">
+              <h3 className="uppercase text-[25px] text-MainColor font-bold">
                 Liên hệ
               </h3>
             </div>

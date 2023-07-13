@@ -183,19 +183,23 @@ export const HeaderItems = [
 
 export const HomeSection4Items = [
   {
-    image: "https://qhomedecor.vn/wp-content/uploads/2019/12/quytrinh1.png",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/quanganhlands-c3f51.appspot.com/o/image%2F1.png?alt=media&token=e939ea06-6362-4674-b0f9-638298a4574d",
     outline: "https://qhomedecor.vn/wp-content/uploads/2018/10/11.png",
   },
   {
-    image: "https://qhomedecor.vn/wp-content/uploads/2019/12/quytrinh2.png",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/quanganhlands-c3f51.appspot.com/o/image%2F2.png?alt=media&token=249eb948-8ae7-4cbb-897d-dc1229a7057b",
     outline: "https://qhomedecor.vn/wp-content/uploads/2018/11/phac-thao.png",
   },
   {
-    image: "https://qhomedecor.vn/wp-content/uploads/2019/12/quytrinh3.png",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/quanganhlands-c3f51.appspot.com/o/image%2F3.png?alt=media&token=47c5ecde-f214-40ba-b1b9-25130cf80ca9",
     outline: "https://qhomedecor.vn/wp-content/uploads/2018/11/sanxuat.png",
   },
   {
-    image: "https://qhomedecor.vn/wp-content/uploads/2019/12/quytrinh4.png",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/quanganhlands-c3f51.appspot.com/o/image%2F4.png?alt=media&token=1e3931f1-cc0f-4d22-9962-60a401ce2ca0",
     outline: "https://qhomedecor.vn/wp-content/uploads/2018/11/ban-giao.png",
   },
 ];

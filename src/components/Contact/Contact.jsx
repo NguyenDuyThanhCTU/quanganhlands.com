@@ -39,7 +39,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <span className="uppercase py-2 px-6 bg-greenMain text-white">
+              <span className="uppercase py-2 px-6 bg-MainColor text-white">
                 gửi đi
               </span>
             </div>
