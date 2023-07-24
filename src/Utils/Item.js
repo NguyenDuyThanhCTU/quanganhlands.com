@@ -127,27 +127,27 @@ export const HeaderItems = [
     dropdown: [
       {
         name: "Chung Cư",
-        link: "/",
+        link: "/chung-cu",
       },
       {
         name: "Biệt Thự",
-        link: "/",
+        link: "/biet-thu",
       },
       {
         name: "Nhà Dân",
-        link: "/",
+        link: "/nha-dan",
       },
       {
         name: "Shop",
-        link: "/",
+        link: "/shop",
       },
       {
         name: "Văn Phòng",
-        link: "/",
+        link: "/van-phong",
       },
       {
         name: "Khách Sạn",
-        link: "/",
+        link: "/khach-san",
       },
     ],
     link: "/designs",
@@ -157,19 +157,23 @@ export const HeaderItems = [
     dropdown: [
       {
         name: "Thi công Biệt Thự",
-        link: "/",
+        link: "/biet-thu",
+        type: 1,
       },
       {
         name: "Thi công Khách Sạn",
-        link: "/",
+        link: "/khach-san",
+        type: 1,
       },
       {
         name: "Thi công Nhà Dân",
-        link: "/",
+        link: "/nha-dan",
+        type: 1,
       },
       {
         name: "Thi công Trạm điện",
-        link: "/",
+        link: "/tram-dien",
+        type: 1,
       },
     ],
     link: "/construction",

@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       {/* <--- Desktop ---> */}
-      <div className="font-Roboto  bg-white  shadow-lg">
+      <div className="font-Roboto  bg-MainColor  shadow-lg">
         <div className="p:hidden p-2 d:flex items-end justify-center gap-56 cursor-pointer">
           <div className="">
             <img
@@ -27,8 +27,8 @@ const Header = () => {
             <div className="flex gap-4">
               {HeaderItems.map((items, idx) => (
                 <div
-                  className={`uppercase mb-5 cursor-pointer font-bold text-[15px] : relative group ${
-                    isSelected === idx && "text-MainColor"
+                  className={`uppercase mb-5 cursor-pointer text-white font-bold text-[15px] : relative group ${
+                    isSelected === idx && "text-yellow-600"
                   }`}
                   onClick={() => {
                     setSelected(idx);
@@ -41,10 +41,19 @@ const Header = () => {
                   <div className="bg-black absolute w-[200px] mt-2 group-hover:block hidden  duration-300 z-10">
                     {items.dropdown &&
                       items.dropdown.map((items) => (
-                        <div className="border-y text-white p-2 text-[14px] shadow-xl">
-                          <span className=""> {items.name}</span>
-                        </div>
+                        <Link
+                          to={`${
+                            items.type === 1
+                              ? `/construction${items.link}`
+                              : `/designs${items.link}`
+                          }`}
+                        >
+                          <div className="border-y text-white p-2 text-[14px] shadow-xl hover:text-yellow-500">
+                            <span className=""> {items.name}</span>
+                          </div>
+                        </Link>
                       ))}
+                    <div className="absolute -top-3 w-full h-5 bg-none"></div>
                   </div>
                 </div>
               ))}
@@ -54,6 +63,7 @@ const Header = () => {
                 onClick={() => {
                   setSearch(!Search);
                 }}
+                className="text-white hover:text-yellow-600"
               />
               {Search && (
                 <div className="absolute text-[15px] right-0 mt-2 z-0">

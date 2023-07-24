@@ -18,18 +18,7 @@ const Section3 = () => {
                 .format("MMMM DD, YYYY");
               return (
                 <>
-                  <div className="d:w-[380px] h-[425px] flex flex-col justify-start hover:shadow-2xl shadow-xl cursor-pointer  rounded-xl">
-                    <img
-                      src={items.image}
-                      alt="image"
-                      className="w-[380px]  rounded-t-xl"
-                    />
-                    <div className="p-4">
-                      <p>{formattedDate}</p>
-                      <h3 className="content-style ">{items.title}</h3>
-                      <p className="truncate5 ">{items.content} </p>
-                    </div>
-                  </div>
+                  <p>{formattedDate}</p>
                 </>
               );
             })}

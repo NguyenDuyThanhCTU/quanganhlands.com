@@ -7,6 +7,9 @@ import Contact from "../components/Contact/Contact";
 import News from "../components/News/News";
 import Construction from "../components/Construction/Construction";
 import Designs from "../components/Designs/Designs";
+import PostDesign from "../components/Designs/Post/PostDesign";
+import PostConstruction from "../components/Designs/Post/PostConstruction";
+import PostDetail from "../components/Designs/Post/PostDetail";
 
 export const AllRoutes = [
   {
@@ -30,8 +33,20 @@ export const AllRoutes = [
     component: Designs,
   },
   {
+    path: "/designs/:id",
+    component: PostDesign,
+  },
+  {
+    path: "/post/:id",
+    component: PostDetail,
+  },
+  {
     path: "/construction",
     component: Construction,
+  },
+  {
+    path: "/construction/:id",
+    component: PostConstruction,
   },
   {
     path: "/news",
