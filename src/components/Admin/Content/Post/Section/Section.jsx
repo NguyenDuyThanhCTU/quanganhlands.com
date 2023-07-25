@@ -13,9 +13,13 @@ const Section = ({ title, Data, HandleDelete, setIsUploadProduct }) => {
           {title}
         </h3>
       </div>
-      <div className="border border-gray-500 rounded-xl mx-5 mt-5 h-[270px] overflow-y-scroll">
+      {/* h-270px */}
+      <div className="border border-gray-500 rounded-xl mx-5 mt-5 h-[500px] overflow-y-scroll">
         {Data?.map((data, idx) => (
-          <div className="grid  cols-5 items-center my-2  ml-1 justify-start px-5 ">
+          <div
+            key={data.id}
+            className="grid  cols-5 items-center my-2  ml-1 justify-start px-5 "
+          >
             <div className="group relative ">
               <FiEdit className="text-red-600 hover:scale-125 duration-300 " />
               <div className="w-[120px] bg-white opacity-90 absolute -top-2 h-8 left-5 rounded-lg hidden group-hover:block ">
@@ -41,7 +45,7 @@ const Section = ({ title, Data, HandleDelete, setIsUploadProduct }) => {
                 <div className="absolute bg-none w-3 h-8 top-0 -left-2"></div>
               </div>
             </div>
-            <p className="">{data.title}</p>
+            <p className="truncate w-[300px]">{data.title}</p>
 
             <img
               src={data.image}
@@ -65,13 +69,13 @@ const Section = ({ title, Data, HandleDelete, setIsUploadProduct }) => {
                 </>
               )}
             </div>
-            <p className=" truncate  ">{data.content}</p>
+            <p className=" truncate ">{data.content}</p>
           </div>
         ))}
       </div>
-      <div className="mt-2 flex w-full  justify-center">
+      <div className="mt-5 flex w-full  justify-center gap-5">
         <button
-          className="py-3 px-5 bg-BlueFF  rounded-3xl hover:bg-BlueFFhover"
+          className="py-3 px-5 bg-BlueFF  rounded-sm hover:bg-BlueFFhover"
           onClick={() => {
             setIsUploadProduct(title);
           }}

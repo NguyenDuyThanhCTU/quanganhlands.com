@@ -5,25 +5,22 @@ const StateContext = createContext();
 export const StateProvider = ({ children }) => {
   const [isUploadProduct, setIsUploadProduct] = useState("");
   const [isSelected, setSelected] = useState(0);
+  const [isRefetch, setIsRefetch] = useState("");
 
-  const [SortBySize, setSortBySize] = useState(" ");
-  const [SortByType, setSortByType] = useState(" ");
-
-  const [isRefetch, setIsRefetch] = useState();
+  //custom
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <StateContext.Provider
       value={{
+        isLoading,
+        setIsLoading,
         isSelected,
         setSelected,
         isRefetch,
         setIsRefetch,
         isUploadProduct,
         setIsUploadProduct,
-        SortBySize,
-        setSortBySize,
-        SortByType,
-        setSortByType,
       }}
     >
       {children}

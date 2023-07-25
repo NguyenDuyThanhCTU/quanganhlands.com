@@ -1,24 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import { message } from "antd";
+import { message, notification } from "antd";
 import { useStateProvider } from "../../../../Context/StateProvider";
-import {
-  delDocument,
-  getProducts,
-} from "../../../../Config/Services/Firebase/FireStoreDB";
-import { HomeSection3CarsItem } from "../../../../Utils/Temp";
+import { delDocument } from "../../../../Config/Services/Firebase/FireStoreDB";
 import Section from "./Section/Section";
 import { useData } from "../../../../Context/DataProviders";
 
 const Post = () => {
-  const { setIsUploadProduct } = useStateProvider();
-  const { HomePosts, NewsPosts } = useData();
+  const { setIsUploadProduct, setIsRefetch } = useStateProvider();
+  const { PostOther, PostCompany } = useData();
 
   const HandleDelete = (id) => {
-    delDocument("products", id).then(() => {
-      message.success("Xóa sản phẩm thành công!");
-      setIsUploadProduct(2);
+    delDocument("posts", id).then(() => {
+      notification["success"]({
+        message: "Thành công!",
+        description: `Yêu cầu của bạn đã được thực hiện thành công !`,
+      });
     });
+    setIsRefetch("deleted");
   };
 
   return (
@@ -27,22 +26,23 @@ const Post = () => {
         <h3 className=" text-[44px] text-center font-bold mb-2 uppercase">
           Danh sách các bài viết
         </h3>
-        <div className="mt-5 border rounded-xl ">
+        <div className="mt-5 border rounded-xl flex flex-col gap-10">
           <Section
-            title="Trang chủ"
-            Data={HomePosts}
+            title="Tin Tức công ty"
+            Data={PostCompany}
             HandleDelete={HandleDelete}
             setIsUploadProduct={setIsUploadProduct}
           />
-          {/* <Section
-            title="Giới thiệu"
-            Data={HomeSection3CarsItem}
+          <span className="h-[2px]  bg-gradient-to-r from-cyan-400 to-blue-300"></span>
+          <Section
+            title="Tin tức Thiết kế - thi công nội thất"
+            Data={PostOther}
             HandleDelete={HandleDelete}
             setIsUploadProduct={setIsUploadProduct}
-          /> */}
+          />
           <Section
-            title="Tin tức"
-            Data={NewsPosts}
+            title="Thi công xây dựng"
+            Data={PostCompany}
             HandleDelete={HandleDelete}
             setIsUploadProduct={setIsUploadProduct}
           />

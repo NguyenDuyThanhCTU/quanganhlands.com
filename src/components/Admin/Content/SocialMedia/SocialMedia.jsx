@@ -2,12 +2,9 @@ import React, { useState } from "react";
 
 import Card from "./Card/Card";
 import { useData } from "../../../../Context/DataProviders";
-import {
-  updateArrayFieldAtIndex,
-  updateDocument,
-} from "../../../../Config/Services/Firebase/FireStoreDB";
+import { updateArrayFieldAtIndex } from "../../../../Config/Services/Firebase/FireStoreDB";
 import { notification } from "antd";
-import { SocialMediaDashboard, iconMapping } from "../../../../Utils/Item";
+import { IconMapping, SocialMediaDashboard } from "../../../../Utils/item";
 import { useStateProvider } from "../../../../Context/StateProvider";
 
 const SocialMedia = () => {
@@ -31,7 +28,6 @@ const SocialMedia = () => {
     );
   };
 
-  const HandleDelete = () => {};
   return (
     <div className="">
       <div className="  border rounded-md border-gray-500">
@@ -40,7 +36,7 @@ const SocialMedia = () => {
         </h3>
         <div className="p-5 grid grid-cols-4 gap-10 ">
           {SocialMediaDashboard.map((items, idx) => {
-            let Icon = iconMapping[items.icon];
+            let Icon = IconMapping[items.icon];
             const SocialMediaItems = SocialMedia[idx];
             return (
               <Card

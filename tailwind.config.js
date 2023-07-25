@@ -7,22 +7,32 @@ module.exports = {
         p: "375px",
         d: "1024px",
       },
-      fontFamily: {
-        LexendDeca: ["Lexend Deca", "sans-serif"],
-        Roboto: ["Roboto", "sans-serif"],
-      },
 
+      backgroundImage: {},
+      backgroundColor: {},
+
+      fontFamily: {
+        OpenSans: ["Open Sans", "sans-serif"],
+        LexendDeca: ["Lexend Deca", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
+        NunitoSans: ["Nunito Sans", "sans-serif"],
+      },
       colors: {
-        MainColor: "#7D0A0F",
+        redPrimmary: "#ed1b2e",
         Blue3D: "#1D1D3D",
-        BlueFF: "#1A49FF",
-        BlueFFhover: "#002DD2",
         colortopdownBlue: "#2c95ff",
         colortopdownGray: "#414045",
-        redPrimmary: "#ed1b2e",
         blueAdmin: "#74affc",
         purpleAdmin: "#bb86fc37",
         purpleHover: "#BB86FC",
+        BlueFF: "#1A49FF",
+        grayBg: "#dbe3e9",
+
+        MainColor: "#7D0A0F",
+      },
+      fontSize: {
+        content: "48px",
+        normal: "18px",
       },
     },
   },
