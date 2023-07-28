@@ -176,7 +176,7 @@ export const SocialMediaCustom = [
     icon: "SiZalo",
     image:
       "https://atpsoftware.vn/wp-content/uploads//2020/03/20211208103735_id_zalo-1.jpg",
-    style: "hover:text-blue-600 hover:bg-white w-10",
+    style: "hover:text-blue-600 hover:bg-white ",
   },
   {
     id: 1,
@@ -280,11 +280,7 @@ export const HeaderItems = [
     dropdown: [],
     link: "/introduction",
   },
-  {
-    name: "Tin tức",
-    dropdown: [],
-    link: "/news",
-  },
+
   {
     name: "Thiết kế - thi công nội thất",
     dropdown: [

@@ -98,7 +98,7 @@ const Header = () => {
                 <img
                   src={TradeMarkData.websiteLogo}
                   alt="logo"
-                  className="w-48"
+                  className="w-16"
                 />
               </Link>
             </div>
@@ -106,12 +106,12 @@ const Header = () => {
               <div className="flex items-center text-[60px]">
                 {Hidden ? (
                   <RxCross1
-                    className=" text-black p-2 "
+                    className=" text-white p-2 "
                     onClick={() => setHidden(!Hidden)}
                   />
                 ) : (
                   <MdOutlineFormatListBulleted
-                    className=" text-black p-2 "
+                    className=" text-white p-2 "
                     onClick={() => setHidden(!Hidden)}
                   />
                 )}
@@ -125,6 +125,7 @@ const Header = () => {
           >
             {HeaderItems.map((items) => (
               <DropDown
+                dropdown={items.dropdown}
                 content={items.name}
                 link={items.link}
                 setHidden={setHidden}
