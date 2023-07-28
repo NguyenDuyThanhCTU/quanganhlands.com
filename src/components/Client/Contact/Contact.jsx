@@ -1,7 +1,9 @@
 import React from "react";
 import Input from "./Item/Input";
+import { useData } from "../../../Context/DataProviders";
 
 const Contact = () => {
+  const { ContactData } = useData();
   return (
     <div className=" py-10 ">
       <div className="p-2 flex justify-center gap-5 p:flex-col d:flex-row">
@@ -12,21 +14,18 @@ const Contact = () => {
             className="w-[685px]"
           />
         </div>
-        <div>
+        <div className="d:w-[500px] p:w-auto">
           <div>
             <h3 className="content-style">liên hệ với chúng tôi</h3>
             <div className="flex flex-col gap-3 my-3">
               <strong>Văn phòng:</strong>
-              <p>
-                Căn 28, Tầng 19, Tòa S201, Vinhomes Smart City, Tây Mỗ – Đại Mỗ,
-                Nam Từ Liêm, Hà Nội
-              </p>
+              <p>{ContactData.address}</p>
 
               <p>
-                <strong>Hotline:</strong> 0961.614.526
+                <strong>Hotline:</strong> {ContactData.phone}
               </p>
               <p>
-                <strong>Website:</strong>
+                <strong>Website:</strong> www.quanganhlands.com
               </p>
             </div>
             <div className="flex flex-col gap-3 mb-5">

@@ -4,7 +4,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const DropDown = ({ content, link, setHidden, dropdown }) => {
-  const [isSelected, setIsSelected] = useState(false);
+  const [isSelected, setIsSelected] = useState(true);
   return (
     <div className="p-4 bg-white ">
       <div className=" border-t border-gray-200 items-start justify-between pt-5  mx-5 flex flex-col">
