@@ -17,6 +17,10 @@ const ClientLayout = ({ children }) => {
       <Helmet>
         <title>{TradeMarkData.websiteName}</title>
         <link rel="icon" href={TradeMarkData.websiteIco} />
+        <meta
+          name="description"
+          content="Thảo Ngô nail - Chuyên sỉ lẻ Sơn móng tay số lượng lớn - phụ kiện nail mi Toàn Quốc"
+        />
       </Helmet>
       <Loading />
 

@@ -7,8 +7,9 @@ const DefaultLayout = ({ children }) => {
   return (
     <>
       <Helmet>
-        <title>{TradeMarkData.websiteName}</title>
-        <link rel="icon" href={TradeMarkData.websiteIco} />
+        {/* <title>{TradeMarkData.websiteName}</title>
+        <link rel="icon" href={TradeMarkData.websiteIco} /> */}
+        <title>Lê Nguyễn Kim Trang Shop</title>
       </Helmet>
       {children}
     </>

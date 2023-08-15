@@ -6,9 +6,9 @@ const Product = () => {
     <div>
       <div className="flex flex-col gap-10">
         <h3 className=" text-[44px] text-center font-bold mb-2 uppercase ">
-          Thông tin sản phẩm
+          Thông tin bài viết
         </h3>
-        <ListProducts name="Thêm sản phẩm" />
+        <ListProducts name="Thêm bài viết" />
       </div>
     </div>
   );
