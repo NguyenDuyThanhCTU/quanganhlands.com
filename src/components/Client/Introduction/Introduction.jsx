@@ -3,7 +3,7 @@ import { IntroItems1, IntroItems2, IntroItems3 } from "../../../Utils/item";
 
 const Introduction = () => {
   return (
-    <div className="d:mx-80 p:mx-0 mt-10 ">
+    <div className="d:w-[1250px] p:w-auto d:mx-auto p:mx-0 mt-10 ">
       {/* <-- Section1 --> */}
       <div className="p-2">
         <h3 className="content-style">THƯ NGỎ!</h3>

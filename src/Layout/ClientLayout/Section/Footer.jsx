@@ -11,7 +11,7 @@ const Footer = () => {
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
   const [Phone, setPhone] = useState("");
-  const { ContactData } = useData();
+  const { ContactData, SocialMedia } = useData();
 
   const HandleSubmit = () => {
     if (!Name || !Email || !Phone) {
@@ -131,14 +131,14 @@ const Footer = () => {
               <div className="flex mt-2 gap-2">
                 {SocialMediaCustom.map((items, idx) => {
                   let Icon = IconMapping[items.icon];
-
+                  let Point = SocialMedia[items.id];
                   return (
                     <div
                       key={idx}
                       className={`${items.style} p-2 border rounded-full hover:scale-110 duration-300 border-black hover:border-white`}
                     >
                       {Icon && (
-                        <a href={`https:// `} target="_blank">
+                        <a href={`https://${Point}`} target="_blank">
                           <Icon />
                         </a>
                       )}

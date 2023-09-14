@@ -6,7 +6,7 @@ const Designs = () => {
   const { Products } = useData();
 
   return (
-    <div className="d:mx-80 p:mx-0  ">
+    <div className="d:mx-auto d:w-[1250px] p:w-auto p:mx-0  ">
       <h3 className="content-style text-center py-10 ">
         thiết kế - Thi công nội thất
       </h3>

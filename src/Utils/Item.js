@@ -278,7 +278,7 @@ export const HeaderItems = [
   {
     name: "Giới thiệu",
     dropdown: [],
-    link: "/introduction",
+    link: "/gioi-thieu",
   },
 
   {
@@ -309,7 +309,7 @@ export const HeaderItems = [
         link: "/khach-san",
       },
     ],
-    link: "/designs",
+    link: "/thiet-ke",
   },
   {
     name: "Thi công xây dựng",
@@ -335,7 +335,7 @@ export const HeaderItems = [
         type: 1,
       },
     ],
-    link: "/construction",
+    link: "/xay-dung",
   },
   {
     name: "Liên hệ",

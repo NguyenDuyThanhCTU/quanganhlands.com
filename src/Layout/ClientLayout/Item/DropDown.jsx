@@ -31,7 +31,7 @@ const DropDown = ({ content, link, setHidden, dropdown }) => {
           >
             {dropdown.map((items, idx) => (
               <>
-                <Link to={`/construction${items.link}`}>
+                <Link to={`/xay-dung${items.link}`}>
                   <div
                     onClick={() => {
                       setHidden(false);

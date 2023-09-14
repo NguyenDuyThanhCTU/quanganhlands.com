@@ -17,7 +17,7 @@ export const AllRoutes = [
   {
     path: "/login",
     component: Login,
-    Layout: DefaultLayout,
+    Layout: AdminLayout,
   },
   {
     path: "/admin",
@@ -31,7 +31,7 @@ export const AllRoutes = [
   },
 
   {
-    path: "/introduction",
+    path: "/gioi-thieu",
     component: Introduction,
     Layout: ClientLayout,
   },
@@ -40,18 +40,18 @@ export const AllRoutes = [
     component: Contact,
     Layout: ClientLayout,
   },
+  // {
+  //   path: "/news",
+  //   component: News,
+  //   Layout: ClientLayout,
+  // },
   {
-    path: "/news",
-    component: News,
-    Layout: ClientLayout,
-  },
-  {
-    path: "/designs",
+    path: "/thiet-ke",
     component: Designs,
     Layout: ClientLayout,
   },
   {
-    path: "/designs/:id",
+    path: "/thiet-ke/:id",
     component: PostDesign,
     Layout: ClientLayout,
   },
@@ -61,12 +61,12 @@ export const AllRoutes = [
     Layout: ClientLayout,
   },
   {
-    path: "/construction",
+    path: "/xay-dung",
     component: Construction,
     Layout: ClientLayout,
   },
   {
-    path: "/construction/:id",
+    path: "/xay-dung/:id",
     component: PostConstruction,
     Layout: ClientLayout,
   },

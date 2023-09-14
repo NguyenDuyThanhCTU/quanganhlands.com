@@ -47,7 +47,8 @@ const PostDetail = () => {
           </div>
 
           <div className="py-10">
-            <p className="mt-3 font-LexendDeca font-light">{isData?.content}</p>
+            <div dangerouslySetInnerHTML={{ __html: isData?.content }} />
+            {/* <p className="mt-3 font-LexendDeca font-light">{isData?.content}</p> */}
           </div>
           <div className="pb-10">
             <img src={isData?.image} alt="post detail image" />

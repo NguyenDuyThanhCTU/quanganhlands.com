@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Construction = () => {
   const { Products } = useData();
   return (
-    <div className="d:mx-80 p:mx-0">
+    <div className="d:mx-auto d:w-[1250px] p:w-auto p:mx-0">
       <h3 className="content-style text-center py-10">Thi công xây dựng</h3>
       <div className="d:grid grid-cols-4 gap-5 p:flex flex-col items-center">
         {Products.filter((item) => {

@@ -19,7 +19,7 @@ const PostDesign = () => {
     } else if (id === "van-phong") {
       setFilter("Văn Phòng");
     } else if (id === "khach-san") {
-      setFilter("Khách sạn");
+      setFilter("Khách Sạn");
     }
   }, [id]);
 
@@ -27,15 +27,16 @@ const PostDesign = () => {
     const sort = Products.filter(
       (items) => items.parentType === "Thiết kế - Thi công nội thất"
     );
+    console.log(sort);
     if (sort) {
       const sort1 = sort.filter((items) => items.type === Filter);
+      console.log(sort1, Filter);
+
       if (sort1) {
         setSortItem(sort1);
       }
     }
-  }, [id, Products]);
-
-  console.log(Filter, SortItem);
+  }, [id, Products, Filter]);
 
   return (
     <div className="w-full flex justify-center py-10 font-LexendDeca">

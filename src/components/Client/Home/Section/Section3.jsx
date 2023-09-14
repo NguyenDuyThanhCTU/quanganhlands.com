@@ -19,7 +19,13 @@ const Section3 = () => {
                   </h3>
                   <p>{items.title}</p>
                 </div>
-                <img src={items.image} alt="section" />
+                <div className="w-[380px] h-[215px] overflow-hidden">
+                  <img
+                    src={items.image}
+                    alt="section"
+                    className="w-full h-full hover:scale-110 duration-300"
+                  />
+                </div>
               </div>
             ))}
           </div>

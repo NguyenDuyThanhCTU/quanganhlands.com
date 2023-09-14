@@ -50,8 +50,8 @@ const Header = () => {
                         <Link
                           to={`${
                             items.type === 1
-                              ? `/construction${items.link}`
-                              : `/designs${items.link}`
+                              ? `/xay-dung${items.link}`
+                              : `/thiet-ke${items.link}`
                           }`}
                         >
                           <div className="border-y text-white p-2 text-[14px] shadow-xl hover:text-yellow-500">
